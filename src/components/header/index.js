@@ -11,11 +11,11 @@ export default function Header(){
 
                 <TouchableOpacity>  
 
-                <Feather name = 'menu' size= {36} color = "#FFF" />
+                <Feather style ={{marginLeft:-50}} name = 'menu' size= {36} color = "#FFF" />
 
                 </TouchableOpacity>
                 
-                <Text style={styles.textHeader}>   PRIMEFILMES  </Text>
+                <Text style={styles.textHeader}>   TEC FILMES  </Text>
             
             </View>
     );
