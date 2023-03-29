@@ -1,6 +1,7 @@
-import React from 'react'
-import { Image,Text } from 'react-native'
+import React,{Fragment} from 'react'
+import { Image,Text ,Fra} from 'react-native'
 import styles from './styles';
+
 
 
 export default function BannerMovies(){
