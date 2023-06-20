@@ -5,47 +5,12 @@ import CardMovies from './src/components/cardFilmes';
 import Header from './src/components/header';
 import SearchBar from './src/components/searchbar';
 import Filmes from './src/data/movies'
-
+import Routes from './src/routes';
 export default function App() {
   return (
-    <View style={styles.container}>
-     <Header></Header>
-
-     <SearchBar></SearchBar>
-
-     <BannerMovies></BannerMovies>
-     
     
-     <View style = {{width :"90%"}}>
-          <FlatList
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}
-            data={Filmes}
-            keyExtractor={(item) => item.id}
-            renderItem={({ item }) => (
-              
-              <CardMovies
-                titulo={item.nome}
-                imagem={item.imagem}
-                nota={item.nota}
-              />
-            )}
-          />
-        </View>
-    
-  
-
-    </View>
+    <Routes></Routes>
 
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor: '#141a29',
-    alignItems:'center'
-    
-    
-  },
-});
