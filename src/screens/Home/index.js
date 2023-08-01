@@ -27,6 +27,7 @@ export default function App() {
               <CardMovies
                 titulo={item.nome}
                 imagem={item.imagem}
+                sinopse={item.sinopse}
                 nota={item.nota}
               />
             )}
